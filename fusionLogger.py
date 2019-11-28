@@ -53,6 +53,8 @@ def run(context):
 
         if fusionLogger:
             ui.messageBox('Fusion Logger initialised')
+            ee = eventsLog('somestuff')
+            ui.messageBox('Failed:\n{}'.format(ee))
 
         else:
             ui.messageBox('Fusion Logger not intialised')
@@ -63,8 +65,6 @@ def run(context):
         # returnValue = mouseEvent_var.add(self, loggerMouseEventHandler)
 
         # cmdDefs = ui.commandDefinitions
-
-
     except:
         debugLogger.debug('Loggernotstarted')
 
@@ -83,3 +83,33 @@ def stop(context):
     except:
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+
+class eventsLog():
+    def __init__(self, eventData=None, first=eventData, last=eventData):
+        self.eventData = eventData
+        self.first = first
+        self.last = last
+
+        a = propCommandExecuteHandler()
+
+        fusionLogger.info('Command: {} '.format(self.event))
+        fusionLogger.info('Details: {} - {}'.format(self.fullname, self.email))
+
+    @property
+    def event(self):
+        try:
+            formatter = '{} happened'.format(self.eventData)
+        except:
+            fusionLogger.exception('EventNotLogged')
+        else:
+            if formatter:
+                return formatter
+
+    @property
+    def email(self):
+        return '{}.{}@email.com'.format(self.first, self.last)
+
+    @property
+    def fullname(self):
+        return '{} {}'.format(self.first, self.last)
