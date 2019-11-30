@@ -50,13 +50,18 @@ def run(context):
                 ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
 
 
+        try:
+            userInterface_var = adsk.core.UserInterface
+            # "userInterface_var" is a variable referencing a UserInterface object.
+            onCommandStarting = MyCommandStartingHandler()
+            userInterface_var.commandStarting.add(onCommandStarting)
+            onCommandTerminated = MyCommandTerminatedHandler()
+            userInterface_var.commandTerminated.add(onCommandTerminated)
+        except:
+            if ui:
+                ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
+                debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
 
-        # a = propCommandExecuteHandler()
-
-        # mouseEvent_var = adsk.core.MouseEvent
-        # returnValue = mouseEvent_var.add(self, loggerMouseEventHandler)
-
-        # cmdDefs = ui.commandDefinitions
     except:
         debugLogger.debug('Loggernotstarted')
 
@@ -140,3 +145,25 @@ class eventsLog():
     @property
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
+
+
+# Event handler for the commandStarting event.
+class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
+    def __init__(self):
+        super().__init__()
+
+    def notify(self, args):
+        eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
+
+        # Code to react to the event.
+        ui.messageBox('In MyCommandStartingHandler event handler.')
+
+# Event handler for the commandTerminated event.
+class MyCommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
+
+        # Code to react to the event.
+        ui.messageBox('In MyCommandTerminatedHandler event handler.')
