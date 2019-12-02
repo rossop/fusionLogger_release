@@ -29,21 +29,11 @@ def run(context):
     try:
         app = adsk.core.Application.get()
         ui = app.userInterface
-        ui.messageBox('Hello addin')
-        debugLogger.debug('Hello addin')
-
-        if debugLogger:
-            debugLogger.debug('Add in started')
-            ui.messageBox('Debug logger initialised')
-
-        else:
-            ui.messageBox('Logger not started')
 
         try:
             eLog = eventsLog()
             eLog.log()
-            ui.messageBox('eLog started')
-            debugLogger.debug('eLog started')
+
         except:
             debugLogger.debug('elog not functioning')
             if ui:
@@ -51,10 +41,10 @@ def run(context):
 
 
         try:
-            userInterface_var = adsk.core.UserInterface
+            userInterface_var = ui#adsk.core.UserInterface.get()
             # "userInterface_var" is a variable referencing a UserInterface object.
             onCommandStarting = MyCommandStartingHandler()
-            userInterface_var.commandStarting.add(onCommandStarting)
+            userInterface_var.commandStarting. add(onCommandStarting)
             onCommandTerminated = MyCommandTerminatedHandler()
             userInterface_var.commandTerminated.add(onCommandTerminated)
         except:
@@ -63,8 +53,8 @@ def run(context):
                 debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
 
     except:
-        debugLogger.debug('Loggernotstarted')
-
+        debugLogger.debug('Logger not started')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
@@ -74,10 +64,12 @@ def stop(context):
     try:
         app = adsk.core.Application.get()
         ui = app.userInterface
-        ui.messageBox('Stop addin')
-        debugLogger.debug('Add in ended')
+        ui.messageBox('Logger Ended')
+        debugLogger.debug('Logger ended')
 
     except:
+        debugLogger.debug('Logger not started')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
@@ -106,11 +98,7 @@ class eventsLog():
             self.fusionLogger = fusionLogger
         except:
             fusionLogger = None
-
-        if fusionLogger:
-            ui.messageBox('Fusion Logger Class initialised')
-        else:
-            ui.messageBox('Fusion Logger not intialised')
+            self.fusionLogger.info('Logger initialised')
 
     def log(self, eventData='something', first=None, last=None):
 
@@ -152,6 +140,11 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
 
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+
+        ui.messageBox('MyCommandStartingHandler event handler initialised.')
+
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
 
@@ -162,6 +155,12 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
 class MyCommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
+
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+
+        ui.messageBox('MyCommandTerminatedHandler event handler initialised.')
+
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
 

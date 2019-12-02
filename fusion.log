@@ -60,3 +60,101 @@
 2019-11-30 23:20:30,901::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
 2019-11-30 23:20:30,901::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
 2019-11-30 23:20:30,901::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-01 21:57:22,732::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-01 21:57:22,733::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:39:51,656::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:39:51,656::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:39:52,811::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:39:52,811::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:39:52,811::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:39:52,811::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:46:05,241::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:46:05,241::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:46:05,242::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:46:05,242::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:46:06,112::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:46:06,112::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:46:06,112::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:46:06,113::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:46:06,113::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:46:06,113::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:55:11,781::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:55:13,758::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:55:13,758::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:55:13,758::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:55:13,758::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:55:13,759::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:55:13,759::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:55:13,759::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:55:13,759::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:57:53,085::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:57:53,085::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:57:53,085::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:57:53,085::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 00:57:53,086::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:57:53,086::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:57:53,086::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:57:53,086::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 00:57:55,214::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:57:55,214::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:57:55,214::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:57:55,214::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:57:55,214::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 00:57:55,215::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:57:55,215::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:57:55,215::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:57:55,215::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 00:57:55,215::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:42,063::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:20:42,063::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:20:42,063::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:20:42,063::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:20:42,063::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:20:42,064::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:20:42,064::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:20:42,064::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:20:42,064::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:20:42,064::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:20:43,403::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,845::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Hello addin
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:33,847::DEBUG::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Add in started
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,708::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2019-12-02 01:23:35,710::INFO::__main__C%3A%2FUsers%2Frosso%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
