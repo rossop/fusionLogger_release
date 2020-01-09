@@ -27,24 +27,6 @@ try:
 except:
     debugLogger = None
 
-try:
-    eLog = eventsLogger()
-    eLog.log('START')
-except:
-    debugLogger.debug('elog not functioning')
-
-try:
-    userInterface_var = ui  # adsk.core.UserInterface.get()
-    # "userInterface_var" is a variable referencing a UserInterface object.
-    onCommandStarting = MyCommandStartingHandler()
-    userInterface_var.commandStarting.add(onCommandStarting)
-    onCommandTerminated = MyCommandTerminatedHandler()
-    userInterface_var.commandTerminated.add(onCommandTerminated)
-except:
-    if ui:
-        ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
-        debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
-
 
 
 class eventsLogger():
@@ -157,20 +139,40 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
 
         # Code to react to the event.
-        ui.messageBox('In MyCommandStartingHandler event handler.')
+        #ui.messageBox('In MyCommandStartingHandler event handler.')
+        elog.log(eventArgs)
+
 
 # Event handler for the commandTerminated event.
 class MyCommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
-
         app = adsk.core.Application.get()
         ui = app.userInterface
-
         ui.messageBox('MyCommandTerminatedHandler event handler initialised.')
 
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
 
         # Code to react to the event.
-        ui.messageBox('In MyCommandTerminatedHandler event handler.')
+        # ui.messageBox('In MyCommandTerminatedHandler event handler.')
+        elog.log(eventArgs)
+
+
+try:
+    eLog = eventsLogger()
+    eLog.log('START')
+except:
+    debugLogger.debug('elog not functioning')
+
+try:
+    userInterface_var = ui  # adsk.core.UserInterface.get()
+    # "userInterface_var" is a variable referencing a UserInterface object.
+    onCommandStarting = MyCommandStartingHandler()
+    userInterface_var.commandStarting.add(onCommandStarting)
+    onCommandTerminated = MyCommandTerminatedHandler()
+    userInterface_var.commandTerminated.add(onCommandTerminated)
+except:
+    if ui:
+        ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
+        debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))

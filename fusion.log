@@ -180,3 +180,9 @@
 2019-12-18 17:29:45,814::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
 2020-01-08 11:00:01,422::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Command: something happened 
 2020-01-08 11:00:01,422::INFO::__main__C%3A%2FUsers%2Fpr13905%2FAppData%2FRoaming%2FAutodesk%2FAutodesk%20Fusion%20360%2FAPI%2FAddIns%2FfusionLogger%2FfusionLogger_py::Details: None None - None.None@email.com
+2020-01-09 16:26:54,922::INFO::partName::Command: START happened 
+2020-01-09 16:26:54,922::INFO::partName::Details: None None - None.None@email.com
+2020-01-09 16:52:02,941::INFO::partName::Command: START happened 
+2020-01-09 16:52:02,941::INFO::partName::Command: START happened 
+2020-01-09 16:52:02,942::INFO::partName::Details: None None - None.None@email.com
+2020-01-09 16:52:02,942::INFO::partName::Details: None None - None.None@email.com
