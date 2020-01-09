@@ -5,15 +5,19 @@ import adsk.core, adsk.fusion, adsk.cam, traceback
 import os
 import logging
 
+
 # Global variable used to maintain a reference to all event handlers.
 handlers = []
+app = adsk.core.Application.get()
+ui = app.userInterface
 
 try:
     # Started a debug logger
-    debugLogger = logging.getLogger(__name__)
+    debugLogger = logging.getLogger('DebuggerFusion')
     debugLogger.setLevel(logging.DEBUG)
 
     debugFormatter = logging.Formatter('%(levelname)s::%(name)s::%(message)s')
+
 
     filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'debug.log')
     file_handler = logging.FileHandler(filename)
@@ -23,82 +27,56 @@ try:
 except:
     debugLogger = None
 
+try:
+    eLog = eventsLogger()
+    eLog.log('START')
+except:
+    debugLogger.debug('elog not functioning')
 
-def run(context):
-    ui = None
-    try:
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-
-        try:
-            eLog = eventsLog()
-            eLog.log()
-
-        except:
-            debugLogger.debug('elog not functioning')
-            if ui:
-                ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
-
-
-        try:
-            userInterface_var = ui#adsk.core.UserInterface.get()
-            # "userInterface_var" is a variable referencing a UserInterface object.
-            onCommandStarting = MyCommandStartingHandler()
-            userInterface_var.commandStarting. add(onCommandStarting)
-            onCommandTerminated = MyCommandTerminatedHandler()
-            userInterface_var.commandTerminated.add(onCommandTerminated)
-        except:
-            if ui:
-                ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
-                debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
-
-    except:
-        debugLogger.debug('Logger not started')
-        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
-        if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+try:
+    userInterface_var = ui  # adsk.core.UserInterface.get()
+    # "userInterface_var" is a variable referencing a UserInterface object.
+    onCommandStarting = MyCommandStartingHandler()
+    userInterface_var.commandStarting.add(onCommandStarting)
+    onCommandTerminated = MyCommandTerminatedHandler()
+    userInterface_var.commandTerminated.add(onCommandTerminated)
+except:
+    if ui:
+        ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
+        debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
 
 
-def stop(context):
-    ui = None
-    try:
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-        ui.messageBox('Logger Ended')
-        debugLogger.debug('Logger ended')
 
-    except:
-        debugLogger.debug('Logger not started')
-        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
-        if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
-
-
-class eventsLog():
+class eventsLogger():
     def __init__(self):
         ui = None
+
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+
         try:
-
-            app = adsk.core.Application.get()
-            ui = app.userInterface
-
-            # Initialise Fusion Logger
-            # TODO Set logger name to user name or to part name
-            fusionLogger = logging.getLogger(__name__)
-            fusionLogger.setLevel(logging.INFO)
-
             fusionFormatter = logging.Formatter('%(asctime)s::%(levelname)s::%(name)s::%(message)s')
-            self.fusionFormatter = fusionFormatter # is this necessary?
 
-            filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'fusion.log')
+            logName = 'fusion.log'
+            filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), logName)
             file_handler = logging.FileHandler(filename)  # TODO set name to user info
             file_handler.setFormatter(fusionFormatter)
 
+            # Initialise Fusion Logger
+            # TODO Set logger name to user name or to part name
+            name = 'partName'
+            fusionLogger = logging.getLogger(name)
+            fusionLogger.setLevel(logging.INFO)
             fusionLogger.addHandler(file_handler)
-            self.fusionLogger = fusionLogger
+
         except:
             fusionLogger = None
-            self.fusionLogger.info('Logger initialised')
+            fusionFormatter = None
+            if ui:
+                ui.messageBox('Failed logger.log():\n{}'.format(traceback.format_exc()))
+
+        self.fusionFormatter = fusionFormatter
+        self.fusionLogger = fusionLogger
 
     def log(self, eventData='something', first=None, last=None):
 
@@ -107,7 +85,6 @@ class eventsLog():
             self.first = first
             self.last = last
 
-            #a = propCommandExecuteHandler()
 
             self.fusionLogger.info('Command: {} '.format(self.event))
             self.fusionLogger.info('Details: {} - {}'.format(self.fullname, self.email))
@@ -135,7 +112,38 @@ class eventsLog():
         return '{} {}'.format(self.first, self.last)
 
 
-# Event handler for the commandStarting event.
+
+def run(context):
+    ui = None
+    try:
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        ui.messageBox('Start Logger ADDIn')
+
+    except:
+        debugLogger.debug('Logger not started')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
+        if ui:
+            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+
+def stop(context):
+    ui = None
+    try:
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        ui.messageBox('Logger Ended')
+        debugLogger.debug('Logger ended')
+
+    except:
+        debugLogger.debug('Logger failed to end')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
+        if ui:
+            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+
+
+# Event handler for the commandStarting event
 class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
