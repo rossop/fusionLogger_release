@@ -7,16 +7,14 @@ import logging
 
 
 # Global variable used to maintain a reference to all event handlers.
-handlers = []
-app = adsk.core.Application.get()
-ui = app.userInterface
-
-# Global Variables
 try:
+    app = adsk.core.Application.get()
+    ui  = app.userInterface
+    handlers = []
     command_var = adsk.core.Command
-    #Event
 except:
-    ui.messageBox('ERROR')
+    if ui:
+        ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
 
 try:
     # Started a debug logger
@@ -31,37 +29,10 @@ try:
     file_handler.setFormatter(debugFormatter)
 
     debugLogger.addHandler(file_handler)
+    
 except:
     debugLogger = None
     ui.messageBox('NO LOGGER')
-
-
-def run(context):
-    ui = None
-    try:
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-        ui.messageBox('Started Logger ADDIn')
-
-    except:
-        debugLogger.debug('Logger not started')
-        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
-        if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
-
-def stop(context):
-    ui = None
-    try:
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-        ui.messageBox('Logger Ended')
-        debugLogger.debug('Logger ended')
-
-    except:
-        debugLogger.debug('Logger failed to end')
-        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
-        if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
 
 class eventsLogger():
@@ -128,55 +99,77 @@ class eventsLogger():
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
 
-class MyCommandExecuteHandler(adsk.core.CommandEventHandler):
-    def __init__(self):
-        super().__init__()
-
-    def notify(self, args):
-        # Code to react to event.
-        eventArgs = adsk.core.CommandEventArgs.cast(args)
-        app = adsk.core.Application.get()
-        ui = app.userInterface
-
-        elog.log('Logged!!')
-        ui.messageBox('In MyExecuteHandler event handler.')
-
 
 try:
     eLog = eventsLogger()
     eLog.log('START')
 except:
-    debugLogger.debug('elog not functioning')
+    debugLogger.debug('eLog not functioning')
+
+
+def run(context):
+    ui = None
+    try:
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        ui.messageBox('Started Logger ADDIn')
+
+    except:
+        debugLogger.debug('Logger not started')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
+        if ui:
+            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+    #global debugLogger
+    #global eLog
+
+
+def stop(context):
+    ui = None
+    try:
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        ui.messageBox('Logger Ended')
+        debugLogger.debug('Logger ended')
+
+    except:
+        debugLogger.debug('Logger failed to end')
+        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
+        if ui:
+            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+
+# Event handler for the commandCreated event.
+class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
+    def __init__(self):
+        super().__init__()
+        app =adsk.core.Application.get()
+        ui = app.userInterface
+
+    def setup_logger(self, logger):
+        self.logger = logger
+        
+        
+    def notify(self, args):
+        eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
+        eLog = eventsLogger()
+        # Code to react to the event.
+        try:
+            eLog.log('Logged!!')
+            ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
+        except:
+            error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
+            ui.messageBox(error_message)
+            debugLogger(error_message)
 
 
 try:
-    userInterface_var = ui  # adsk.core.UserInterface.get()
-    # "userInterface_var" is a variable referencing a UserInterface object.s
-    # if None:
-    #     onCommandStarting = MyCommandStartingHandler()
-    #     userInterface_var.commandStarting.add(onCommandStarting)
-    #     onCommandTerminated = MyCommandTerminatedHandler()
-    #     userInterface_var.commandTerminated.add(onCommandTerminated)S
-    onCommandExecute = MyCommandExecuteHandler()
-
-    try:
-        objs = [command_var, command_var.execute]
-        for obj in objs:
-            try:
-                object_methods = [method_name for method_name in dir(obj)
-                          if callable(getattr(obj, method_name))]
-                debugLogger.debug(str(object_methods))
-            except:
-                debugLogger.debug('Error')
-    except:
-        debugLogger.debug('Error')
-
-    command_var._get_activate.add(onCommandExecute)
-    handlers.append(onCommandExecute)
-
+    onCommandStarting = MyCommandStartingHandler()
+    ui.commandStarting.add(onCommandStarting)
+    handlers.append(onCommandStarting)
+    ui.messageBox('here')
 except:
-    debugLogger.debug('Failed elog:\n{}'.format(traceback.format_exc()))
-    if ui:
-        ui.messageBox('Failed elog:\n{}'.format(traceback.format_exc()))
-
-
+    ui.messageBox('here2')
+    debugLogger.debug('Handlers not set: \n{}'.format(traceback.format_exc()))
+    ui.messageBox('here3??')
+    ui.messageBox('Handlers not set: \n{}'.format(traceback.format_exc()))

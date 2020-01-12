@@ -12142,3 +12142,13 @@ Traceback (most recent call last):
     command_var._get_activate.add(onCommandExecute)
 AttributeError: 'function' object has no attribute 'add'
 
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
