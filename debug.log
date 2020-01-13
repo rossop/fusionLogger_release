@@ -12152,3 +12152,636 @@ AttributeError: 'function' object has no attribute 'add'
 2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
 2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
 2020-01-12 16:45:58,523::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:36:05,085::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 19:50:03,634::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:06:24,034::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:06:24,034::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:06:24,034::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:06:24,034::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:08:40,537::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:08:40,537::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:08:40,537::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:08:40,537::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:08:40,537::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:09:01,285::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:11:27,001::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:16,511::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:16:51,880::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,683::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:23,685::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:56,952::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,964::DEBUG::DebuggerFusion::Logger not started
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:27:59,965::DEBUG::DebuggerFusion::Failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 94, in run
+    debuggerLogger.debug(message)
+NameError: name 'debuggerLogger' is not defined
+
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:32,051::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:34,307::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:28:52,777::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:48:52,454::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:49:15,221::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:54:11,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:38,985::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:43,721::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:44,704::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:48,753::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 145, in notify
+    loggedData = str(list(eventArgs))
+TypeError: 'ApplicationCommandEventArgs' object is not iterable
+
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended

@@ -1,5 +1,5 @@
 # Author- rossop
-# Description-
+# Description - 
 
 import adsk.core, adsk.fusion, adsk.cam, traceback
 import os
@@ -32,15 +32,14 @@ try:
     
 except:
     debugLogger = None
-    ui.messageBox('NO LOGGER')
+    ui.messageBox('NO DEBUG LOGGER')
 
 
 class eventsLogger():
     def __init__(self):
-        ui = None
-
-        app = adsk.core.Application.get()
-        ui = app.userInterface
+        # ui = None
+        # app = adsk.core.Application.get()
+        # ui = app.userInterface
 
         try:
             fusionFormatter = logging.Formatter('%(asctime)s::%(levelname)s::%(name)s::%(message)s')
@@ -60,45 +59,19 @@ class eventsLogger():
         except:
             fusionLogger = None
             fusionFormatter = None
-            if ui:
-                ui.messageBox('Failed logger.log():\n{}'.format(traceback.format_exc()))
+            debugLogger.log('Failed logger.log():\n{}'.format(traceback.format_exc()))
+            # if ui:
+            #     ui.messageBox('Failed logger.log():\n{}'.format(traceback.format_exc()))
 
         self.fusionFormatter = fusionFormatter
         self.fusionLogger = fusionLogger
 
-    def log(self, eventData='something', first=None, last=None):
-
+    def log(self, eventData='something'):
         try:
-            self.eventData = eventData
-            self.first = first
-            self.last = last
-
-
+            self.event = eventData
             self.fusionLogger.info('Command: {} '.format(self.event))
-            self.fusionLogger.info('Details: {} - {}'.format(self.fullname, self.email))
-
         except:
-            if ui:
-                ui.messageBox('Failed logger.log():\n{}'.format(traceback.format_exc()))
-
-    @property
-    def event(self):
-        try:
-            formatter = '{} happened'.format(self.eventData)
-        except:
-            fusionLogger.exception('EventNotLogged')
-        else:
-            if formatter:
-                return formatter
-
-    @property
-    def email(self):
-        return '{}.{}@email.com'.format(self.first, self.last)
-
-    @property
-    def fullname(self):
-        return '{} {}'.format(self.first, self.last)
-
+            debugLogger.debug('Failed logger.log():\n{}'.format(traceback.format_exc()))
 
 try:
     eLog = eventsLogger()
@@ -112,7 +85,9 @@ def run(context):
     try:
         app = adsk.core.Application.get()
         ui = app.userInterface
-        ui.messageBox('Started Logger ADDIn')
+        message = 'Started Logger ADDIn'
+        ui.messageBox(message)
+        debugLogger.debug(message)
 
     except:
         debugLogger.debug('Logger not started')
@@ -155,21 +130,31 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         eLog = eventsLogger()
         # Code to react to the event.
         try:
-            eLog.log('Logged!!')
-            ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
+            obj_list = [method_name for method_name in dir(eventArgs)
+                      if callable(getattr(eventArgs, method_name))]
+            loggedData = str(eventArgs._get_commandDefinition())
+            eLog.log('commandDefinition:\n{}'.format(loggedData))
+            eLog.log('obj_list:\n{}'.format(str(obj_list)))
+
+            loggedData = str(eventArgs._get_commandId())
+            eLog.log('commandID:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs._get_objectType())
+            eLog.log('objectType:\n{}'.format(loggedData))
+
+            loggedData = str(list(eventArgs))
+            eLog.log('eventArgs:\n{}'.format(loggedData))
+            # ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
         except:
             error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
             ui.messageBox(error_message)
-            debugLogger(error_message)
+            debugLogger.debug(error_message)
 
 
 try:
     onCommandStarting = MyCommandStartingHandler()
     ui.commandStarting.add(onCommandStarting)
     handlers.append(onCommandStarting)
-    ui.messageBox('here')
 except:
-    ui.messageBox('here2')
     debugLogger.debug('Handlers not set: \n{}'.format(traceback.format_exc()))
-    ui.messageBox('here3??')
     ui.messageBox('Handlers not set: \n{}'.format(traceback.format_exc()))
