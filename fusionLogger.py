@@ -10,6 +10,7 @@ import logging
 try:
     app = adsk.core.Application.get()
     ui  = app.userInterface
+    mouse = adsk.core.MouseEvent
     handlers = []
     command_var = adsk.core.Command
 except:
@@ -134,16 +135,29 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
                       if callable(getattr(eventArgs, method_name))]
             loggedData = str(eventArgs._get_commandDefinition())
             eLog.log('commandDefinition:\n{}'.format(loggedData))
-            eLog.log('obj_list:\n{}'.format(str(obj_list)))
+            #eLog.log('obj_list:\n{}'.format(str(obj_list)))
 
             loggedData = str(eventArgs._get_commandId())
             eLog.log('commandID:\n{}'.format(loggedData))
 
             loggedData = str(eventArgs._get_objectType())
-            eLog.log('objectType:\n{}'.format(loggedData))
+            #eLog.log('objectType:\n{}'.format(loggedData))
 
-            loggedData = str(list(eventArgs))
-            eLog.log('eventArgs:\n{}'.format(loggedData))
+            loggedData = str(eventArgs._get_firingEvent())
+            #eLog.log('eventArgs:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__module__)
+            #eLog.log('module:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__class__)
+            eLog.log('class:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__dir__())
+            # eLog.log('dir:\n{}'.format(loggedData))
+
+            loggedData = type(eventArgs)
+            eLog.log('type:\n{}'.format(loggedData))
+
             # ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
         except:
             error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
@@ -154,7 +168,16 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
 try:
     onCommandStarting = MyCommandStartingHandler()
     ui.commandStarting.add(onCommandStarting)
-    handlers.append(onCommandStarting)
+    ui.messageBox(app.userId)
+    ui.messageBox(app.userName)
+    ui.messageBox(app.version)
+    ui.messageBox(app.activeDocument)
+    # #banana = adsk.core.HTMLEvent()
+    # # banana = ui.commandStarting()
+    # # banana.add(onCommandStarting)
+    # mouse.add(onCommandStarting)
+    # handlers.append(onCommandStarting)
+    
 except:
     debugLogger.debug('Handlers not set: \n{}'.format(traceback.format_exc()))
     ui.messageBox('Handlers not set: \n{}'.format(traceback.format_exc()))

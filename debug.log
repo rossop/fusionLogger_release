@@ -12785,3 +12785,697 @@ TypeError: 'ApplicationCommandEventArgs' object is not iterable
 2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
 2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
 2020-01-12 20:59:51,826::DEBUG::DebuggerFusion::Logger ended
+2020-01-13 00:51:54,392::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-13 00:52:03,532::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 148, in notify
+    loggedData = str(eventArgs.__module__())
+TypeError: 'str' object is not callable
+
+2020-01-13 00:52:06,759::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 148, in notify
+    loggedData = str(eventArgs.__module__())
+TypeError: 'str' object is not callable
+
+2020-01-13 00:52:35,261::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 148, in notify
+    loggedData = str(eventArgs.__module__
+TypeError: 'str' object is not callable
+
+2020-01-13 00:52:35,714::DEBUG::DebuggerFusion::Logger failed:
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 148, in notify
+    loggedData = str(eventArgs.__module__
+TypeError: 'str' object is not callable
+
+2020-01-13 00:52:42,276::DEBUG::DebuggerFusion::Logger ended
+2020-01-13 00:56:42,238::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-13 00:56:42,238::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-13 00:57:26,270::DEBUG::DebuggerFusion::Logger ended
+2020-01-13 00:57:26,270::DEBUG::DebuggerFusion::Logger ended
+2020-01-13 08:57:46,286::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-13 08:58:36,191::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 15:54:14,810::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 15:54:21,231::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 15:54:38,109::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 15:54:43,689::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 15:54:59,539::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 15:54:59,539::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 15:59:57,431::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 15:59:57,431::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:00:00,442::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:00:00,442::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:00:00,442::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:07:10,270::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:07:10,270::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:07:10,270::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:07:32,697::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:07:32,697::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:07:32,697::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:07:32,697::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:15:46,605::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:15:46,605::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:15:46,605::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:15:46,605::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:29:01,327::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:29:01,327::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:29:01,327::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:29:01,327::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:29:02,866::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    ui.workspaceActivated.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 28690, in add
+    return _core.WorkspaceEvent_add(self, *args)
+TypeError: in method 'WorkspaceEvent_add', argument 2 of type 'adsk::core::WorkspaceEventHandler *'
+
+2020-01-22 16:29:02,866::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    ui.workspaceActivated.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 28690, in add
+    return _core.WorkspaceEvent_add(self, *args)
+TypeError: in method 'WorkspaceEvent_add', argument 2 of type 'adsk::core::WorkspaceEventHandler *'
+
+2020-01-22 16:29:02,866::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    ui.workspaceActivated.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 28690, in add
+    return _core.WorkspaceEvent_add(self, *args)
+TypeError: in method 'WorkspaceEvent_add', argument 2 of type 'adsk::core::WorkspaceEventHandler *'
+
+2020-01-22 16:29:02,866::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    ui.workspaceActivated.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 28690, in add
+    return _core.WorkspaceEvent_add(self, *args)
+TypeError: in method 'WorkspaceEvent_add', argument 2 of type 'adsk::core::WorkspaceEventHandler *'
+
+2020-01-22 16:29:02,866::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    ui.workspaceActivated.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 28690, in add
+    return _core.WorkspaceEvent_add(self, *args)
+TypeError: in method 'WorkspaceEvent_add', argument 2 of type 'adsk::core::WorkspaceEventHandler *'
+
+2020-01-22 16:30:54,398::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:30:54,398::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:30:54,398::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:30:54,398::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:30:54,398::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:31:01,808::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:31:01,808::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:31:01,808::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:31:01,808::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:31:01,808::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:31:03,407::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    adsk.core.HTMLEvent.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22273, in add
+    return _core.HTMLEvent_add(self, *args)
+TypeError: HTMLEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:19,395::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:26,717::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:32:28,366::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    banana = adsk.core.HTMLEvent()
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 22246, in __init__
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+AttributeError: No constructor defined
+
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:02,326::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:11,403::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:12,899::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    mouse.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 23890, in add
+    return _core.MouseEvent_add(self, *args)
+TypeError: MouseEvent_add() takes exactly 2 arguments (1 given)
+
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:47,114::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:34:54,547::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:22,717::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    # # banana.add(onCommandStarting)
+NameError: name 'mouse' is not defined
+
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:24,312::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:32,946::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:37:34,211::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 171, in <module>
+    app.cameraChanged.add(onCommandStarting)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 17692, in add
+    return _core.CameraEvent_add(self, *args)
+TypeError: in method 'CameraEvent_add', argument 2 of type 'adsk::core::CameraEventHandler *'
+
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:22,090::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:28,840::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 16:42:55,252::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 17:30:20,007::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
