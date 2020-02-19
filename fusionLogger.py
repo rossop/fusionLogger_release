@@ -80,21 +80,61 @@ try:
 except:
     debugLogger.debug('eLog not functioning')
 
-
 def run(context):
     ui = None
     try:
+
+        #global app, ui
         app = adsk.core.Application.get()
-        ui = app.userInterface
-        message = 'Started Logger ADDIn'
-        ui.messageBox(message)
-        debugLogger.debug(message)
+        ui  = app.userInterface
+
+        # Get the CommandDefinitions collection.
+        cmdDefs = ui.commandDefinitions
+        
+        # Create a button command definition.
+        button = cmdDefs.addButtonDefinition('FusionLoggerID', 
+                                                'Start Logger', 
+                                                   'Records',
+                                                   './scr/rec')
+                                                   
+        
+        # Connect to the command created event.
+        CommandCreated = CommandCreatedEventHandler()
+        button.commandCreated.add(CommandCreated)
+        handlers.append(CommandCreated)
+        
+        # Get the ADD-INS panel in the model workspace. 
+        addInsPanel = ui.allToolbarPanels.itemById('SolidScriptsAddinsPanel')
+        
+        # Add the button to the bottom of the panel.
+        buttonControl = addInsPanel.controls.addCommand(button)
+
+        # Get the solid create panel in the model workspace. 
+        addInsPanel = ui.allToolbarPanels.itemById('SolidCreatePanel')
+        
+        # Add the button to the bottom of the panel.
+        buttonControl = addInsPanel.controls.addCommand(button)
+        buttonControl.isPromotedByDefault = True
+
+        #Adds a toolbar for the MicroChannels
+        workSpace = ui.workspaces.itemById('FusionSolidEnvironment')
+        tbPanels = workSpace.toolbarPanels
+        
+
+        tbPanel = tbPanels.itemById('MicroPanel')
+        if tbPanel:
+            tbPanel.deleteMe()
+        tbPanel = tbPanels.add('MicroPanel', 'Fusion360 Logger', 'SelectPanel', False)
+
+        # Add the button to the bottom of the panel.
+        Microtool = tbPanel.controls.addCommand(button)
+        Microtool.isPromotedByDefault = True
+
 
     except:
-        debugLogger.debug('Logger not started')
-        debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
 
     #global debugLogger
     #global eLog
@@ -116,6 +156,26 @@ def stop(context):
 
 
 # Event handler for the commandCreated event.
+class CommandCreatedEventHandler(adsk.core.CommandCreatedEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        app = adsk.core.Application.get()
+        ui  = app.userInterface
+
+        try:
+            eventArgs = adsk.core.CommandCreatedEventArgs.cast(args)
+
+            message = 'Started Logger ADDIn'
+            ui.messageBox(message)
+            debugLogger.debug(message)
+
+        except:
+            debugLogger.debug('Logger not started')
+            debugLogger.debug('Failed:\n{}'.format(traceback.format_exc()))
+            if ui:
+                ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
 class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
@@ -171,7 +231,7 @@ try:
     ui.messageBox(app.userId)
     ui.messageBox(app.userName)
     ui.messageBox(app.version)
-    ui.messageBox(app.activeDocument)
+    # ui.messageBox(app.activeDocument)
     # #banana = adsk.core.HTMLEvent()
     # # banana = ui.commandStarting()
     # # banana.add(onCommandStarting)

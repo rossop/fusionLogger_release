@@ -13479,3 +13479,547 @@ NotImplementedError: Wrong number or type of arguments for overloaded function '
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:34:26,552::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 174, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:34:28,416::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:35:19,911::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:35:23,833::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:35:23,833::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:36:12,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:36:12,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:43:29,603::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:43:29,603::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:43:33,900::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:43:33,900::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:43:33,900::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:46:17,747::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:17,747::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:17,747::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:32,393::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:46:32,393::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:46:32,393::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:46:35,721::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:46:35,721::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:46:35,721::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:46:35,721::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 224, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:46:48,107::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:48,107::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:48,107::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:46:48,107::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:55:43,448::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:55:43,448::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:55:43,448::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:55:43,448::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:26,295::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:26,295::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:26,295::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:26,295::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:26,295::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:40,174::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:58:40,174::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:58:40,174::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:58:40,174::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:58:40,174::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 17:58:50,047::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:50,047::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:50,047::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:50,047::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:50,047::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 17:58:53,591::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 237, in <module>
+    ui.messageBox(app.activeDocument)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+NotImplementedError: Wrong number or type of arguments for overloaded function 'UserInterface_messageBox'.
+  Possible C/C++ prototypes are:
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes,adsk::core::MessageBoxIconTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &,adsk::core::MessageBoxButtonTypes) const
+    adsk::core::UserInterface::messageBox(std::string const &,std::string const &) const
+    adsk::core::UserInterface::messageBox(std::string const &) const
+
+
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:00:58,317::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:03,141::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:18,501::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:01:32,887::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:05,823::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:20,374::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:25,669::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:02:34,748::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:49,205::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:03:55,221::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:04,742::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:20,510::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:04:24,893::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:19,445::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:29,877::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:32,662::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 18:07:35,461::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:08:58,842::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:10,691::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:09:31,290::DEBUG::DebuggerFusion::Logger ended
+2020-02-19 19:10:21,727::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 232, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/f22942efe2b06fa9ddd3dbfac8de50bab0281b28/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-02-19 19:10:52,521::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 19:10:55,217::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 19:11:08,657::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 19:11:53,816::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-19 19:13:22,776::DEBUG::DebuggerFusion::Started Logger ADDIn
