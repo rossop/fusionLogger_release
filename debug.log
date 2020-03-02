@@ -14023,3 +14023,12 @@ RuntimeError: 3 : invalid argument text
 2020-02-19 19:11:08,657::DEBUG::DebuggerFusion::Started Logger ADDIn
 2020-02-19 19:11:53,816::DEBUG::DebuggerFusion::Started Logger ADDIn
 2020-02-19 19:13:22,776::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-20 16:11:57,796::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 231, in <module>
+    ui.messageBox(app.userId)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 2208, in _get_userId
+    return _core.Application__get_userId(self)
+RuntimeError: 2 : InternalValidationError : user
+
+2020-02-20 16:12:46,027::DEBUG::DebuggerFusion::Logger ended
