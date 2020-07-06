@@ -13479,3 +13479,33 @@ NotImplementedError: Wrong number or type of arguments for overloaded function '
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
 2020-01-22 23:30:30,035::DEBUG::DebuggerFusion::Logger ended
+2020-01-28 20:46:05,861::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/fe3aabe314e26a9de16467d8eecb0c30acd7712b/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-01-28 20:46:09,738::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-29 10:56:10,163::DEBUG::DebuggerFusion::Logger ended
+2020-01-31 00:40:04,731::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/9eb6e3e95b2f4cf7bb2f804604f4040b86fc00dd/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-01-31 00:40:05,622::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-01-31 09:26:40,503::DEBUG::DebuggerFusion::Logger ended
+2020-02-12 11:15:26,070::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/rosso/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/rosso/AppData/Local/Autodesk/webdeploy/production/3465dd6a7b990d1848a8fd2e3fad04774e190b2f/Api/Python/packages\adsk\core.py", line 14525, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-02-12 11:15:27,058::DEBUG::DebuggerFusion::Started Logger ADDIn
+2020-02-13 09:37:55,903::DEBUG::DebuggerFusion::Logger ended
