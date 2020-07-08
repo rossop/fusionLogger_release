@@ -10,6 +10,7 @@ try:
     app = adsk.core.Application.get()
     ui  = app.userInterface
     mouse = adsk.core.MouseEvent
+    # Global variable used to maintain a reference to all event handlers.
     handlers = []
     command_var = adsk.core.Command
 except:
@@ -33,6 +34,8 @@ try:
 except:
     debugLogger = None
     ui.messageBox('NO DEBUG LOGGER')
+
+
 
 
 class eventsLogger():
@@ -117,56 +120,155 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
 
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
-        eLog = eventsLogger()
+
         # Code to react to the event.
-        try:
-            obj_list = [method_name for method_name in dir(eventArgs)
-                      if callable(getattr(eventArgs, method_name))]
-            loggedData = str(eventArgs._get_commandDefinition())
-            eLog.log('commandDefinition:\n{}'.format(loggedData))
-            #eLog.log('obj_list:\n{}'.format(str(obj_list)))
+        # ui.messageBox('In MyWorkspaceActivatedHandler event handler.')
 
-            loggedData = str(eventArgs._get_commandId())
-            eLog.log('commandID:\n{}'.format(loggedData))
 
-            loggedData = str(eventArgs._get_objectType())
-            #eLog.log('objectType:\n{}'.format(loggedData))
+        # eLog = eventsLogger()
+        # # Code to react to the event.
+        # try:
+        #     obj_list = [method_name for method_name in dir(eventArgs)
+        #               if callable(getattr(eventArgs, method_name))]
+        #     loggedData = str(eventArgs._get_commandDefinition())
+        #     eLog.log('commandDefinition:\n{}'.format(loggedData))
+        #     #eLog.log('obj_list:\n{}'.format(str(obj_list)))
 
-            loggedData = str(eventArgs._get_firingEvent())
-            #eLog.log('eventArgs:\n{}'.format(loggedData))
+        #     loggedData = str(eventArgs._get_commandId())
+        #     eLog.log('commandID:\n{}'.format(loggedData))
 
-            loggedData = str(eventArgs.__module__)
-            #eLog.log('module:\n{}'.format(loggedData))
+        #     loggedData = str(eventArgs._get_objectType())
+        #     #eLog.log('objectType:\n{}'.format(loggedData))
 
-            loggedData = str(eventArgs.__class__)
-            eLog.log('class:\n{}'.format(loggedData))
+        #     loggedData = str(eventArgs._get_firingEvent())
+        #     #eLog.log('eventArgs:\n{}'.format(loggedData))
 
-            loggedData = str(eventArgs.__dir__())
-            # eLog.log('dir:\n{}'.format(loggedData))
+        #     loggedData = str(eventArgs.__module__)
+        #     #eLog.log('module:\n{}'.format(loggedData))
 
-            loggedData = type(eventArgs)
-            eLog.log('type:\n{}'.format(loggedData))
+        #     loggedData = str(eventArgs.__class__)
+        #     eLog.log('class:\n{}'.format(loggedData))
 
-            # ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
-        except:
-            error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
-            ui.messageBox(error_message)
-            debugLogger.debug(error_message)
+        #     loggedData = str(eventArgs.__dir__())
+        #     # eLog.log('dir:\n{}'.format(loggedData))
+
+        #     loggedData = type(eventArgs)
+        #     eLog.log('type:\n{}'.format(loggedData))
+
+        #     # ui.messageBox('In MyCommandStartingHandler event handler.\nDo some logging')
+        # except:
+        #     error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
+        #     ui.messageBox(error_message)
+        #     debugLogger.debug(error_message)
+
+# Event handler for the commandTerminated event.
+class MyCommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
+
+        # Code to react to the event.
+        # ui.messageBox('In MyCommandTerminatedHandler event handler.')
+
+# Event handler for the workspaceActivated event.
+class MyWorkspaceActivatedHandler(adsk.core.WorkspaceEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        eventArgs = adsk.core.WorkspaceEventArgs.cast(args)
+
+        # Code to react to the event.
+        # ui.messageBox('In MyWorkspaceActivatedHandler event handler.')
+
+# Event handler for the markingMenuDisplaying event.
+class MyMarkingMenuDisplayingHandler(adsk.core.MarkingMenuEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        eventArgs = adsk.core.MarkingMenuEventArgs.cast(args)
+
+        # Code to react to the event.
+        # ui.messageBox('In MyMarkingMenuDisplayingHandler event handler.')
+
+# Event handler for the commandTerminated event.
+class MyCameraEventdHandler(adsk.core.CameraEventHandler):
+    def __init__(self):
+        super().__init__()
+    def notify(self, args):
+        eventArgs = adsk.core.CameraEventArgs.cast(args)
+
+        # Code to react to the event.
+        ui.messageBox('In MyCameraEventdHandler event handler.')
+        
 
 
 try:
     onCommandStarting = MyCommandStartingHandler()
     ui.commandStarting.add(onCommandStarting)
+    handlers.append(onCommandStarting)
+
+    # "userInterface_var" is a variable referencing a UserInterface object.
+    onCommandTerminated = MyCommandTerminatedHandler()
+    ui.commandTerminated.add(onCommandTerminated)
+    handlers.append(onCommandTerminated)
+
+    # "userInterface_var" is a variable referencing a UserInterface object.
+    onMarkingMenuDisplaying = MyMarkingMenuDisplayingHandler()
+    ui.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+    handlers.append(onMarkingMenuDisplaying)
+
+    # "userInterface_var" is a variable referencing a UserInterface object.
+    onWorkspaceActivated = MyWorkspaceActivatedHandler()
+    ui.workspaceActivated.add(onWorkspaceActivated)
+    handlers.append(onWorkspaceActivated)
+
+
+
     ui.messageBox(app.userId)
     ui.messageBox(app.userName)
     ui.messageBox(app.version)
-    # ui.messageBox(app.activeDocument)
-    # #banana = adsk.core.HTMLEvent()
-    # # banana = ui.commandStarting()
-    # # banana.add(onCommandStarting)
-    # mouse.add(onCommandStarting)
-    # handlers.append(onCommandStarting)
 
 except:
     debugLogger.debug('Handlers not set: \n{}'.format(traceback.format_exc()))
-    ui.messageBox('Handlers not set: \n{}'.format(traceback.format_exc())) 
+    ui.messageBox('Handlers not set: \n{}'.format(traceback.format_exc()))     
+
+
+
+def clearLoggingHandlers():
+    """
+    Remove uiHandlers from handlers list and ui
+    """
+    try:
+        # onCommandStarting.
+        ui.commandStarting.remove(onCommandStarting)
+        handlers.remove(onCommandStarting)
+
+        # onCommandTerminated.
+        ui.commandTerminated.remove(onCommandTerminated)
+        handlers.remove(onCommandTerminated)
+
+        # onMarkingMenuDisplaying.
+        ui.markingMenuDisplaying.remove(onMarkingMenuDisplaying)
+        handlers.remove(onMarkingMenuDisplaying)
+
+        # onWorkspaceActivated.
+        ui.workspaceActivated.remove(onWorkspaceActivated)
+        handlers.remove(onWorkspaceActivated)
+    
+    except:
+        # create try/except for individual logginf handlers
+        ui.messageBox('Handlers not removed: \n{}'.format(traceback.format_exc()))
+
+    return None
+
+
+def stop(context):
+    """
+
+    """
+    try:
+        clearLoggingHandlers()
+        ui.messageBox("Logger Stopped")
+    except:
+        ui.messageBox('Handlers not removed: \n{}'.format(traceback.format_exc()))    

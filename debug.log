@@ -13509,3 +13509,75 @@ RuntimeError: 3 : invalid argument text
 
 2020-02-12 11:15:27,058::DEBUG::DebuggerFusion::Started Logger ADDIn
 2020-02-13 09:37:55,903::DEBUG::DebuggerFusion::Logger ended
+2020-07-07 10:34:53,283::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 161, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/bc9c725a70f09cde6da1d8ccb49780b84d161bee/Api/Python/packages\adsk\core.py", line 14534, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-07-07 15:57:18,125::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    handlers.append(onWorkspaceActivated)
+NameError: name 'onWorkspaceActivated' is not defined
+
+2020-07-07 15:57:18,125::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    handlers.append(onWorkspaceActivated)
+NameError: name 'onWorkspaceActivated' is not defined
+
+2020-07-07 15:57:18,125::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 172, in <module>
+    handlers.append(onWorkspaceActivated)
+NameError: name 'onWorkspaceActivated' is not defined
+
+2020-07-07 16:04:01,471::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 205, in <module>
+    userInterface_var.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+NameError: name 'userInterface_var' is not defined
+
+2020-07-07 16:04:01,471::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 205, in <module>
+    userInterface_var.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+NameError: name 'userInterface_var' is not defined
+
+2020-07-07 16:04:01,471::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 205, in <module>
+    userInterface_var.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+NameError: name 'userInterface_var' is not defined
+
+2020-07-07 16:04:01,471::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 205, in <module>
+    userInterface_var.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+NameError: name 'userInterface_var' is not defined
+
+2020-07-07 16:04:01,471::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 205, in <module>
+    userInterface_var.markingMenuDisplaying.add(onMarkingMenuDisplaying)
+NameError: name 'userInterface_var' is not defined
+
+2020-07-07 16:28:38,752::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 253, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/bc9c725a70f09cde6da1d8ccb49780b84d161bee/Api/Python/packages\adsk\core.py", line 14534, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
+2020-07-07 18:24:26,635::DEBUG::DebuggerFusion::Handlers not set: 
+Traceback (most recent call last):
+  File "C:/Users/pr13905/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/fusionLogger/fusionLogger.py", line 217, in <module>
+    ui.messageBox(app.userName)
+  File "C:/Users/pr13905/AppData/Local/Autodesk/webdeploy/production/bc9c725a70f09cde6da1d8ccb49780b84d161bee/Api/Python/packages\adsk\core.py", line 14534, in messageBox
+    return _core.UserInterface_messageBox(self, *args)
+RuntimeError: 3 : invalid argument text
+
