@@ -5,6 +5,24 @@ import adsk.core, adsk.fusion, adsk.cam, traceback
 import os
 import logging
 
+# Set up fusionLogger
+try:
+    user = 'rossop'
+    LOG_FORMAT = '%(asctime)s.%(msecs)03d::%(process)d::%(filename)s::%(levelname)s::%(message)s'
+    #log_filename = user + '_info.log'
+
+    logging.basicConfig(name='fusion_logger',
+                        level = logging.INFO,
+                        format = LOG_FORMAT,
+                        datefmt='%Y-%m-%d,%H:%M:%S',
+                        filename = 'C:\Users\pr13905\fusion_log_' + user + '.log',
+                        filemode='a')
+    
+    fusion_logger = logging.getLogger('fusion_logger')
+except:
+    if ui:
+        ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
+
 # Global variable used to maintain a reference to all event handlers.
 try:
     app = adsk.core.Application.get()
@@ -18,17 +36,8 @@ except:
     if ui:
         ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
 
-# def checkHandler(self, args):
-#     # Code to react to the event.
-#     app =adsk.core.Application.get()
-#     ui = app.userInterface
-#     try:
-#         ui.messageBox('In {} event handler.'.fomat(self.__name__)
-#     except:
-#         ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
-#     return None
 
-
+# Event handler for the Comand start event
 class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
     def __init__(self):
         super().__init__()
@@ -36,62 +45,18 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         ui = app.userInterface
 
     def setup_logger(self, logger):
-        self.logger = logger
+        try:
+            self.logger = fusion_logger
+        except:
+            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))        
 
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
         try:
+            fusion_logger.info('In MyCommandStartingHandler event handler.')
             ui.messageBox('In MyCommandStartingHandler event handler.')
         except:
-            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
-
-# Event handler for the commandTerminated event.
-class MyCameraEventdHandler(adsk.core.CameraEventHandler):
-    def __init__(self):
-        super().__init__()
-    def notify(self, args):
-        eventArgs = adsk.core.CameraEventArgs.cast(args)
-
-        # Code to react to the event.
-        ui.messageBox('In MyCameraEventdHandler event handler.') 
-
-class MyMouseClickHandler(adsk.core.MouseEventHandler):
-    def __init__(self):
-        super().__init__()
-    def notify(self, args):
-        # Code to react to the event.
-        ui.messageBox('In MyMouseClickHandler event handler.')
-
-
-def clearLoggingHandlers():
-    """
-    Remove uiHandlers from handlers list and ui
-    """
-    try:
-        app = adsk.core.Application.get()
-        ui  = app.userInterface
-
-        # onCommandStarting.
-        ui.commandStarting.remove(onCommandStarting)
-        handlers.remove(onCommandStarting)
-
-        # onCommandTerminated.
-        ui.commandTerminated.remove(onCommandTerminated)
-        handlers.remove(onCommandTerminated)
-
-        # onMarkingMenuDisplaying.
-        ui.markingMenuDisplaying.remove(onMarkingMenuDisplaying)
-        handlers.remove(onMarkingMenuDisplaying)
-
-        # onWorkspaceActivated.
-        ui.workspaceActivated.remove(onWorkspaceActivated)
-        handlers.remove(onWorkspaceActivated)
-    
-    except:
-        # create try/except for individual logginf handlers
-        ui.messageBox('Handlers not removed: \n{}'.format(traceback.format_exc()))
-
-    return None
+            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))        
 
 
 def run(context):
@@ -105,7 +70,6 @@ def run(context):
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
-
 def stop(context):
     ui = None
     try:
@@ -118,23 +82,14 @@ def stop(context):
         if ui:
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 
-# setup handlers 
+
+# setup handlers to trigger loggers
 try:
     # "userInterface_var" is a variable referencing a UserInterface object.
     onCommandStarting = MyCommandStartingHandler()
     ui.commandStarting.add(onCommandStarting)
     handlers.append(onCommandStarting)
 
-    # "userInterface_var" is a variable referencing a UserInterface object.
-    #onCameraActivated = MyCameraEventdHandler()
-    #ui.workspaceActivated.add(onCameraActivated)
-    #handlers.append(onWorkspaceActivated)
-
-    # "command_var" is a variable referencing a Command object.
-    onMouseClick = MyMouseClickHandler()
-    mouse.add(onMouseClick)
-    handlers.append(onMouseClick)
-    
     ui.messageBox(app.userId)
     ui.messageBox(app.userName)
     ui.messageBox(app.version)
