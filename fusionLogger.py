@@ -29,6 +29,7 @@ try:
     app = adsk.core.Application.get()
     ui  = app.userInterface
     mouse = adsk.core.MouseEvent
+    camera = app.cameraChanged
 
     # Global variable used to maintain a reference to all event handlers.
     handlers = []
@@ -49,12 +50,7 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         super().__init__()
         app =adsk.core.Application.get()
         ui = app.userInterface
-
-    def setup_logger(self, logger):
-        try:
-            self.logger = fusion_logger
-        except:
-            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))        
+    
 
     def notify(self, args):
         eventArgs = adsk.core.ApplicationCommandEventArgs.cast(args)
@@ -75,12 +71,36 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
             ui.messageBox(error_message)   
 
 
+class MyCameraChangedHandler(adsk.core.CameraEventHandler):
+    def __init__(self):
+        super().__init__()
+        app =adsk.core.Application.get()
+        ui = app.userInterface
+
+    def notify(self, args):
+        eventArgs = adsk.core.CameraEventArgs.cast(args)
+
+        try:
+            objectType = str(eventArgs._get_objectType())
+            viewport = str(eventArgs.viewport)
+
+            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{objectType}|{viewport}'
+            fusion_logger.info(INFO)
+
+        except:
+            ui = adsk.core.Application.get().userInterface
+            if ui:
+                ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+
+
 def run(context):
     ui = None
     try:
         app = adsk.core.Application.get()
         ui  = app.userInterface
-        ui.messageBox('Hello addin')
+        INFO = f'{_userId}|{_userName}|{_version}|session start'
+        fusion_logger.info(INFO)
+        ui.messageBox('Fusion Logger Started')
 
     except:
         if ui:
@@ -92,7 +112,9 @@ def stop(context):
         app = adsk.core.Application.get()
         ui  = app.userInterface
         # clearLoggingHandlers()
-        ui.messageBox('Stop addin')
+        INFO = f'{_userId}|{_userName}|{_version}|session end'
+        fusion_logger.info(INFO)
+        ui.messageBox('Fusion Logger Stopped')
 
     except:
         if ui:
@@ -105,6 +127,10 @@ try:
     onCommandStarting = MyCommandStartingHandler()
     ui.commandStarting.add(onCommandStarting)
     handlers.append(onCommandStarting)
+
+    onCameraChanged = MyCameraChangedHandler()
+    camera.add(onCameraChanged)
+    handlers.append(onCameraChanged)
 
 
 except:
