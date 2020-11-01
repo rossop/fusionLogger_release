@@ -8,17 +8,30 @@ import logging
 # Set up fusionLogger
 try:
     user = 'rossop'
-    LOG_FORMAT = '%(asctime)s.%(msecs)03d::%(process)d::%(filename)s::%(levelname)s::%(message)s'
+    
+    fusion_logger = logging.getLogger(__name__)
+    fusion_logger.setLevel(logging.INFO)
+
+    LOG_FORMAT = '%(asctime)s::%(msecs)03d::%(process)d::%(filename)s::%(levelname)s::%(message)s'
+    formatter = logging.Formatter(LOG_FORMAT)
+    
+    file_handler = logging.FileHandler('C:/Users/pr13905/fusion_log_' + user + '.log')
+    file_handler.setFormatter(formatter)
+
+    fusion_logger.addHandler(file_handler)
+    
     #log_filename = user + '_info.log'
 
-    logging.basicConfig(name='fusion_logger',
-                        level = logging.INFO,
-                        format = LOG_FORMAT,
-                        datefmt='%Y-%m-%d,%H:%M:%S',
-                        filename = 'C:\Users\pr13905\fusion_log_' + user + '.log',
-                        filemode='a')
+
+
+    # logging.basicConfig(name='fusion_logger',
+    #                     level = logging.INFO,
+    #                     format = LOG_FORMAT,
+    #                     datefmt='%Y-%m-%d,%H:%M:%S',
+    #                     filename = 'C:\Users\pr13905\fusion_log_' + user + '.log',
+    #                     filemode='a')
     
-    fusion_logger = logging.getLogger('fusion_logger')
+    # fusion_logger = logging.getLogger('fusion_logger')
 except:
     if ui:
         ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
@@ -56,7 +69,40 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
             fusion_logger.info('In MyCommandStartingHandler event handler.')
             ui.messageBox('In MyCommandStartingHandler event handler.')
         except:
-            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))        
+            ui.messageBox('Error:\n{}'.format(traceback.format_exc()))  
+
+        # Code to react to the event.
+        try:
+            obj_list = [method_name for method_name in dir(eventArgs)
+                      if callable(getattr(eventArgs, method_name))]
+            loggedData = str(eventArgs._get_commandDefinition())
+            fusion_logger.info'commandDefinition:\n{}'.format(loggedData))
+            #eLog.log('obj_list:\n{}'.format(str(obj_list)))
+
+            loggedData = str(eventArgs._get_commandId())
+         S  fusion_logger.info('commandId:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs._get_objectType())
+            fusion_logger.info('objectType:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs._get_firingEvent())
+            fusion_logger.info('eventArgs:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__module__)
+            fusion_logger.info('module:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__class__)
+            fusion_logger.info('class:\n{}'.format(loggedData))
+
+            loggedData = str(eventArgs.__dir__())
+            fusion_logger.info('dir:\n{}'.format(loggedData))
+
+            loggedData = type(eventArgs)
+            fusion_logger.info('type:\n{}'.format(loggedData))
+
+        except:
+            error_message = 'Logger failed:\n{}'.format(traceback.format_exc())
+            ui.messageBox(error_message)   
 
 
 def run(context):
