@@ -7,7 +7,7 @@ import logging
 
 # Set up fusionLogger
 try:
-    user = 'rossop'
+    user = 'hicksb'
     
     fusion_logger = logging.getLogger(__name__)
     fusion_logger.setLevel(logging.INFO)
@@ -15,7 +15,7 @@ try:
     LOG_FORMAT = '%(asctime)s|%(msecs)03d|%(process)d|%(filename)s|%(levelname)s|%(message)s'
     formatter = logging.Formatter(LOG_FORMAT)
     
-    file_handler = logging.FileHandler('C:/Users/pr13905/fusion_log_' + user + '.log')
+    file_handler = logging.FileHandler('fusionLog_' + user + '.log')
     file_handler.setFormatter(formatter)
 
     fusion_logger.addHandler(file_handler)
