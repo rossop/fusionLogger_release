@@ -3,11 +3,15 @@
 
 import adsk.core, adsk.fusion, adsk.cam, traceback
 import os
+import sys
 import logging
 
 # Set up fusionLogger
 try:
+    app = adsk.core.Application.get()
+    ui  = app.userInterface
     user = 'hicksb'
+    filename = 'fusion360_' + user + '.log'
     
     fusion_logger = logging.getLogger(__name__)
     fusion_logger.setLevel(logging.INFO)
@@ -15,7 +19,16 @@ try:
     LOG_FORMAT = '%(asctime)s|%(msecs)03d|%(process)d|%(filename)s|%(levelname)s|%(message)s'
     formatter = logging.Formatter(LOG_FORMAT)
     
-    file_handler = logging.FileHandler('fusionLog_' + user + '.log')
+    if sys.platform == 'win32' or sys.platform == 'win64':
+        desktop = os.path.expanduser("~\Desktop")
+    elif sys.platform == 'darwin':
+        desktop = os.path.expanduser("~/Desktop")
+    PATH = os.path.join(desktop, filename)
+
+
+    ui.messageBox(PATH)
+
+    file_handler = logging.FileHandler(PATH)
     file_handler.setFormatter(formatter)
 
     fusion_logger.addHandler(file_handler)
@@ -59,8 +72,9 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         try:
             objectType = str(eventArgs._get_objectType())
             commandId = str(eventArgs._get_commandId())
+            editObj = str(app.activeEditObject)
             
-            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{objectType}|{commandId}'
+            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{editObj}|{objectType}|{commandId}'
             fusion_logger.info(INFO)
             # obj_list = [method_name for method_name in dir(eventArgs)
             #           if callable(getattr(eventArgs, method_name))]
@@ -83,8 +97,9 @@ class MyCameraChangedHandler(adsk.core.CameraEventHandler):
         try:
             objectType = str(eventArgs._get_objectType())
             viewport = str(eventArgs.viewport)
+            editObj = str(app.activeEditObject)
 
-            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{objectType}|{viewport}'
+            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{editObj}|{objectType}|{viewport}'
             fusion_logger.info(INFO)
 
         except:
