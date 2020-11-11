@@ -6,12 +6,28 @@ import os
 import sys
 import logging
 
-# Set up fusionLogger
+# Global variable used to maintain a reference to all event handlers.
 try:
     app = adsk.core.Application.get()
     ui  = app.userInterface
-    user = 'hicksb'
-    filename = 'fusion360_' + user + '.log'
+    mouse = adsk.core.MouseEvent
+    camera = app.cameraChanged
+
+    # Global variable used to maintain a reference to all event handlers.
+    handlers = []
+    command_var = adsk.core.Command
+
+    _userId = app.userId
+    _userName = app.userName
+    _version = app.version
+
+except:
+    if ui:
+        ui.messageBox('Error:\n{}'.format(traceback.format_exc()))
+
+# Set up fusionLogger
+try:
+    filename = 'fusion360_' + _userName + '.log'
     
     fusion_logger = logging.getLogger(__name__)
     fusion_logger.setLevel(logging.INFO)
@@ -72,9 +88,12 @@ class MyCommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         try:
             objectType = str(eventArgs._get_objectType())
             commandId = str(eventArgs._get_commandId())
-            editObj = str(app.activeEditObject)
+            editObj = str(app.activeEditObject.objectType)
+            document = str(app.activeDocument.name)
+            workspace = str(ui.activeWorkspace.name)
+            workspaceID = str(ui.activeWorkspace.id)
             
-            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{editObj}|{objectType}|{commandId}'
+            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{document}|{editObj}|w:{workspace}|{workspaceID}|{objectType}|{commandId}'
             fusion_logger.info(INFO)
             # obj_list = [method_name for method_name in dir(eventArgs)
             #           if callable(getattr(eventArgs, method_name))]
@@ -96,10 +115,12 @@ class MyCameraChangedHandler(adsk.core.CameraEventHandler):
 
         try:
             objectType = str(eventArgs._get_objectType())
-            viewport = str(eventArgs.viewport)
+            viewport = str(eventArgs.viewport.camera)
             editObj = str(app.activeEditObject)
+            document = str(app.activeDocument.name)
+            workspace = str(ui.activeWorkspace.name)
 
-            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{editObj}|{objectType}|{viewport}'
+            INFO = f'{_userId}|{_userName}|{_version}|{self.__class__}|{document}|{editObj}|w:{workspace}|{objectType}|{viewport}'
             fusion_logger.info(INFO)
 
         except:
@@ -143,9 +164,9 @@ try:
     ui.commandStarting.add(onCommandStarting)
     handlers.append(onCommandStarting)
 
-    onCameraChanged = MyCameraChangedHandler()
-    camera.add(onCameraChanged)
-    handlers.append(onCameraChanged)
+    # onCameraChanged = MyCameraChangedHandler()
+    # camera.add(onCameraChanged)
+    # handlers.append(onCameraChanged)
 
 
 except:
