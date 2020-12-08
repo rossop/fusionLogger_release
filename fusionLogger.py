@@ -107,6 +107,7 @@ class CommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
 
 
 class CommandFusionLoggerAddIn:
+    # TODO: modify so that when the button is pressed it pops a window communicating the status of the logger. if running or it restarts it if needed
 
     def __init__(self):
 
@@ -190,6 +191,45 @@ class CommandFusionLoggerAddIn:
                 log.error(format(traceback.format_exc()))
                 ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
+class CommandStopFusionLogger: 
+    # TODO: modify so that when the button is pressed it pops a window communicating the status of the logger. if running or it stops it if needed
+    # The stop method can be simply unbindEventHandler removing logger from monitored handlers.
+    def __init__(self):
+
+        ui = adsk.core.Application.get().userInterface
+        try:
+            self.onClosed = MyCloseEventHandler()
+
+            self.stopFusionLoggerCmdDef = ui.commandDefinitions.itemById(COMMAND_ID_STOP)
+            if not self.stopFusionLoggerCmdDef:
+                log.debug('Create Stop Fusion Logger menu Item.')
+                self.stopFusionLoggerCmdDef = ui.commandDefinitions.addButtonDefinition(COMMAND_ID_STOP, 'Stop Logger', 'Stop Recording actions in Fusion 360', './resources/stop')
+
+                        # Add the command to the toolbar.
+            panel = ui.allToolbarPanels.itemById('SolidScriptsAddinsPanel')
+            if panel:
+                cntrl = panel.controls.itemById(COMMAND_ID_STOP)
+                if not cntrl:
+                    log.debug('Add Stop Fusion Logger to Add-Ins toolbar under Solids.')
+                    cmd = panel.controls.addCommand(self.stopFusionLoggerCmdDef)
+                    cmd.isPromoted = True
+                    cmd.isPromotedByDefault = True
+
+            panel = ui.allToolbarPanels.itemById('CAMScriptsAddinsPanel')
+            if panel:
+                cntrl = panel.controls.itemById(COMMAND_ID_STOP)
+                if not cntrl:
+                    log.debug('Add Stop Fusion Logger to Add-Ins toolbar under CAM.')
+                    cmd = panel.controls.addCommand(self.stopFusionLoggerCmdDef)
+                    cmd.isPromoted = True
+                    cmd.isPromotedByDefault = True
+        except:
+            if ui:
+                log.error(format(traceback.format_exc()))
+                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+    def __del__(self):
+        pass
+
 
 def run(context):
     global  _app, _ui, handlers, log, logger_handler, LOG_FILE_NAME, _userId, _userName, _version , _addin, _stopButton
@@ -214,6 +254,7 @@ def run(context):
         _version = _app.version   
 
         _addin = CommandFusionLoggerAddIn()
+        _stopButton = CommandStopFusionLogger()
         ui.messageBox('Started Fusion Logger add-in')
         
 
