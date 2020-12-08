@@ -2,12 +2,12 @@
 	"autodeskProduct":	"Fusion360",
 	"type":	"addin",
 	"id":	"b348cea1-ad14-4583-bfd1-c0c3cca45b12",
-	"author":	"",
+	"author":	"rossop",
 	"description":	{
 		"":	""
 	},
-	"version":	"",
-	"runOnStartup":	true,
+	"version":	"0.0.29",
+	"runOnStartup":	false,
 	"supportedOS":	"windows|mac",
 	"editEnabled":	true
 }
