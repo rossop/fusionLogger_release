@@ -163,34 +163,32 @@ class CommandFusionLoggerAddIn:
                 ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
     def __del__(self):
+        try:
+            ui = adsk.core.Application.get().userInterface
 
-        ui = adsk.core.Application.get().userInterface
-
-        # Delete command created
-        unbindEventHandler(self.showPaletteCmdDef.commandCreated, self.onCommandCreated)
-
-        # Delete the palette created by this add-in.
-        palette = ui.palettes.itemById(PALETTE_ID)
-        if palette:
-            palette.deleteMe()
-        
-        # Delete controls and associated command definitions created by this add-ins
-        panel = ui.allToolbarPanels.itemById('SolidScriptsAddinsPanel')
-        cmd = panel.controls.itemById(COMMAND_ID)
-        if cmd:
-            cmd.deleteMe()
-
-        panel = ui.allToolbarPanels.itemById('CAMScriptsAddinsPanel')
-        if panel:
+            # Delete command created
+            # unbindEventHandler(self.startFusionLoggerCmdDef.commandCreated, self.onCommandCreated)
+            
+            # Delete controls and associated command definitions created by this add-ins
+            panel = ui.allToolbarPanels.itemById('SolidScriptsAddinsPanel')
             cmd = panel.controls.itemById(COMMAND_ID)
             if cmd:
                 cmd.deleteMe()
 
-        if self.showPaletteCmdDef:
-            self.showPaletteCmdDef.deleteMe()
+            panel = ui.allToolbarPanels.itemById('CAMScriptsAddinsPanel')
+            if panel:
+                cmd = panel.controls.itemById(COMMAND_ID)
+                if cmd:
+                    cmd.deleteMe()
 
-        unbindEventHandler(ui.commandStarting, self.onCommandStarting)
-        unbindEventHandler(ui.commandTerminated, self.onCommandTerminated)
+
+            unbindEventHandler(ui.commandStarting, self.onCommandStarting)
+            unbindEventHandler(ui.commandTerminated, self.onCommandTerminated)
+        
+        except:
+            if ui:
+                log.error(format(traceback.format_exc()))
+                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 
 def run(context):
@@ -216,9 +214,7 @@ def run(context):
         _version = _app.version   
 
         _addin = CommandFusionLoggerAddIn()
-        #_startButton = 
-        #_stopButton = CommandStopFusionLogger()
-
+        ui.messageBox('Started Fusion Logger add-in')
         
 
     except:
@@ -230,16 +226,18 @@ def run(context):
 def stop(context):
     global _app, _ui, handlers, log, logger_handler, LOG_FILE_NAME, _userId, _userName, _version , _addin, _stopButton
     ui = None
+    ui = adsk.core.Application.get().userInterface
     
     try:
         log.warn('Stopped Fusion Logger add-in.')
         log.warn('------------------------------------------------------------')
         log.removeHandler(logger_handler)
         del log
-        # os.remove(LOG_FILE_NAME)
-        ui = adsk.core.Application.get().userInterface  
+    
+          
         del _addin
-        del _stopButton
-
+        ui.messageBox('Stopped Fusion Logger add-in')
     except:
-        pass
+        if ui:
+            log.error(format(traceback.format_exc()))
+            ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
