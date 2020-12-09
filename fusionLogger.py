@@ -32,6 +32,8 @@ def bindEventHandler(event, handler):
 def unbindEventHandler(event, handler):
     event.remove(handler)
     handlers.remove(handler)
+    ui = adsk.core.Application.get().userInterface
+    ui.messageBox('unbinded')
 
 
 # # Event handler for the palette close event.
@@ -217,18 +219,6 @@ class CommandFusionLoggerAddIn(FusionLoggerButtonAddIn):
 
 
 
-class CommandStopFusionLogger(FusionLoggerButtonAddIn): 
-    # TODO: modify so that when the button is pressed it pops a window communicating the status of the logger. if running or it stops it if needed
-    # The stop method can be simply unbindEventHandler removing logger from monitored handlers.
-    def __init__(self):
-        super().__init__(COMMAND_ID_STOP, 'Stop')
-
-class CommandPauseFusionLogger(FusionLoggerButtonAddIn): 
-    # TODO: modify so that when the button is pressed it pops a window communicating the status of the logger. if running or it stops it if needed
-    # The stop method can be simply unbindEventHandler removing logger from monitored handlers.
-    def __init__(self):
-        super().__init__(COMMAND_ID_PAUSE, 'Pause')
-
 def run(context):
     global  _app, _ui, handlers, log, logger_handler, LOG_FILE_NAME, _userId, _userName, _version , _addin, _stopButton, _pauseButton
 
@@ -252,8 +242,7 @@ def run(context):
         _version = _app.version   
 
         _addin = CommandFusionLoggerAddIn()
-        _stopButton = CommandStopFusionLogger()
-        _pauseButton = CommandPauseFusionLogger()
+
         ui.messageBox('Started Fusion Logger add-in')
         
 
@@ -264,7 +253,7 @@ def run(context):
 
 
 def stop(context):
-    global _app, _ui, handlers, log, logger_handler, LOG_FILE_NAME, _userId, _userName, _version , _addin , _stopButton, _pauseButton
+    global _app, _ui, handlers, log, logger_handler, LOG_FILE_NAME, _userId, _userName, _version , _addin
     ui = adsk.core.Application.get().userInterface
     
     try:
@@ -273,8 +262,6 @@ def stop(context):
         log.removeHandler(logger_handler)
         del log
         del _addin
-        del _stopButton
-        del _pauseButton 
         ui.messageBox('Stopped Fusion Logger add-in')
     except:
         if ui:
