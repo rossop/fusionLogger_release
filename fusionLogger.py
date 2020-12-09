@@ -32,8 +32,6 @@ def bindEventHandler(event, handler):
 def unbindEventHandler(event, handler):
     event.remove(handler)
     handlers.remove(handler)
-    ui = adsk.core.Application.get().userInterface
-    ui.messageBox('unbinded')
 
 
 # # Event handler for the palette close event.
@@ -74,7 +72,7 @@ class CommandStartingHandler(adsk.core.ApplicationCommandEventHandler):
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 
 # Event handler for the commandStarting event.
@@ -107,7 +105,7 @@ class CommandTerminatedHandler(adsk.core.ApplicationCommandEventHandler):
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 #onExecute = CommandExecuteHandler()
 
@@ -151,7 +149,7 @@ class FusionLoggerButtonAddIn:
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to Start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to Start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
     def __del__(self):
         try:
@@ -175,7 +173,7 @@ class FusionLoggerButtonAddIn:
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to Delete the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to Delete the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 
 class CommandFusionLoggerAddIn(FusionLoggerButtonAddIn):
@@ -204,7 +202,7 @@ class CommandFusionLoggerAddIn(FusionLoggerButtonAddIn):
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
     def __del__(self):
         super().__del__()
@@ -215,7 +213,7 @@ class CommandFusionLoggerAddIn(FusionLoggerButtonAddIn):
         except:
             if ui:
                 log.error(format(traceback.format_exc()))
-                ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+                # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 
 
@@ -249,7 +247,7 @@ def run(context):
     except:
         if ui:
             log.error(format(traceback.format_exc()))
-            ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+            # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
 
 
 def stop(context):
@@ -266,4 +264,4 @@ def stop(context):
     except:
         if ui:
             log.error(format(traceback.format_exc()))
-            ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
+            # ui.messageBox('Failed to start the Fusion Logger for Fusion 360 add-in:\n\n{}'.format(traceback.format_exc()))
