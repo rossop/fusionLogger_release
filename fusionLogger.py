@@ -1,7 +1,7 @@
-# Author- Peter Rosso  - rosso.io - Design and Manufacture Futures Lab
+# Author- Peter Rosso  - https://rosso.io/ - Design and Manufacturing Futures Lab https://dmf-lab.co.uk/
 # Description-Fusion Logger shows your learning history and recommends new commands to use.
 # LOG File by AdbA Icons ❤️ from the Noun Project
-# stop sign by Michael Finney from the Noun Project
+# The button functionality is based on the commandmap add in : https://commandmap.autodesk.com/v1/
 
 import adsk, adsk.core, traceback, json, webbrowser, logging, os
 
@@ -23,7 +23,6 @@ PALETTE_ID = 'commandMapPalette'
 COMMAND_ID = 'StartFusionLogger'
 COMMAND_ID_STOP = 'StopFusionLogger'
 COMMAND_ID_PAUSE = 'PauseFusionLogger'
-PALETTE_URL = 'https://commandmap.autodesk.com/v1/'
 
 def bindEventHandler(event, handler):
     event.add(handler)
@@ -227,7 +226,7 @@ def run(context):
         log = logging.getLogger(__name__)
         logger_handler = logging.FileHandler(LOG_FILE_NAME)
         logger_handler.setLevel(logging.INFO)
-        logger_formatter = logging.Formatter('%(asctime)s %(message)s')
+        logger_formatter = logging.Formatter('%(asctime)s|%(process)d|%(filename)s|%(levelname)s|%(message)s')
         logger_handler.setFormatter(logger_formatter)
         log.addHandler(logger_handler)
         log.setLevel(logging.INFO)
